@@ -5356,3 +5356,252 @@ Completed 200 OK in 2133ms (Views: 2118.4ms | ActiveRecord: 10.0ms)
 
 
 Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-09 14:21:52 -0400
+
+
+Started GET "/" for 140.180.246.2 at 2015-04-18 18:52:18 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 2794ms (Views: 2786.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-ac381ed3810d2ca931f26f845c482319.css?body=1" for 140.180.246.2 at 2015-04-18 18:52:21 +0000
+
+
+Started GET "/assets/static_pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.246.2 at 2015-04-18 18:52:21 +0000
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.246.2 at 2015-04-18 18:52:21 +0000
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 140.180.246.2 at 2015-04-18 18:52:21 +0000
+
+
+Started GET "/assets/application-a44d112db54721f8e82e76fe1485b1df.css?body=1" for 140.180.246.2 at 2015-04-18 18:52:21 +0000
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 140.180.246.2 at 2015-04-18 18:52:22 +0000
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 140.180.246.2 at 2015-04-18 18:52:22 +0000
+
+
+Started GET "/assets/bootstrap-52ddc9e5c6743cc001357411d58d99c0.js?body=1" for 140.180.246.2 at 2015-04-18 18:52:22 +0000
+
+
+Started GET "/assets/turbolinks-d9dcd5206ee131f11181e8ca09537148.js?body=1" for 140.180.246.2 at 2015-04-18 18:52:22 +0000
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.246.2 at 2015-04-18 18:52:22 +0000
+
+
+Started GET "/assets/static_pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.246.2 at 2015-04-18 18:52:22 +0000
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 140.180.246.2 at 2015-04-18 18:52:22 +0000
+
+
+Started GET "/assets/application-2ed08b86ea4536b7a82abd4249a96b75.js?body=1" for 140.180.246.2 at 2015-04-18 18:52:22 +0000
+
+
+Started GET "/assets/rails-be2e3e66a18126c4042f84cd4aae4cb3.png" for 140.180.246.2 at 2015-04-18 18:52:22 +0000
+
+
+Started GET "/signup" for 140.180.246.2 at 2015-04-18 18:52:35 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (290.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 400ms (Views: 390.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 140.180.246.2 at 2015-04-18 18:52:50 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JJgy3EJglk3QbunvSEF1v5KVuNgiiGDfU2+X9dkcWj2Kd/cLCxOqR6x3oUX48+NGWtWNNyx/CIaOuz+WxQvWyQ==", "user"=>{"name"=>"Felicia Ng", "email"=>"fng@princeton.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('fng@princeton.edu') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Felicia Ng"], ["email", "fng@princeton.edu"], ["password_digest", "$2a$10$N.tlU43wWs9jf28zDiEvx.cxhQAz55JorHBoVNXw3me9k1D7rdSX."], ["created_at", "2015-04-18 18:52:50.169911"], ["updated_at", "2015-04-18 18:52:50.169911"]]
+  [1m[36m (7.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/users/101
+Completed 302 Found in 94ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/users/101" for 140.180.246.2 at 2015-04-18 18:52:50 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 101]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 101]]
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 94ms (Views: 87.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 140.180.246.2 at 2015-04-18 18:53:02 +0000
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 101]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 0
+  Rendered users/_user.html.erb (5.3ms)
+  Rendered users/index.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 90ms (Views: 88.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?page=2" for 140.180.246.2 at 2015-04-18 18:53:26 +0000
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 101]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 30 OFFSET 30[0m
+  Rendered users/_user.html.erb (4.7ms)
+  Rendered users/index.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 88ms (Views: 86.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?page=3" for 140.180.246.2 at 2015-04-18 18:53:43 +0000
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 101]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 60
+  Rendered users/_user.html.erb (5.0ms)
+  Rendered users/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 97ms (Views: 95.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?page=4" for 140.180.246.2 at 2015-04-18 18:54:28 +0000
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 101]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 30 OFFSET 90[0m
+  Rendered users/_user.html.erb (2.1ms)
+  Rendered users/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 101ms (Views: 99.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/101" for 140.180.246.2 at 2015-04-18 18:54:37 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 101]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 101]]
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 93ms (Views: 92.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 140.180.246.2 at 2015-04-18 18:54:40 +0000
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 101]]
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 87ms (Views: 86.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/contact" for 140.180.246.2 at 2015-04-18 18:54:49 +0000
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 101]]
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 81.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 140.180.246.2 at 2015-04-18 18:55:49 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 101]]
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 75ms (Views: 74.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/help" for 140.180.246.2 at 2015-04-18 18:55:54 +0000
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 101]]
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 140.180.246.2 at 2015-04-18 18:55:56 +0000
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 101]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 0
+  Rendered users/_user.html.erb (5.8ms)
+  Rendered users/index.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 111ms (Views: 109.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/101" for 140.180.246.2 at 2015-04-18 18:56:06 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 101]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 101]]
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 91ms (Views: 90.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/101/edit" for 140.180.246.2 at 2015-04-18 18:56:09 +0000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 101]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 101]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/edit.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 94ms (Views: 92.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for 140.180.246.2 at 2015-04-18 18:56:15 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KOs8MLY/p+OPEd5aqHZ75oLOqywfI1u0/P0eUWI6DBOGBPnn/0yb6fMIlvAYxO0fSo6ewxHUM+0hKbYyfi2A5w=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 101]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://ec2-54-201-70-193.us-west-2.compute.amazonaws.com/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 140.180.246.2 at 2015-04-18 18:56:15 +0000
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.0ms)
